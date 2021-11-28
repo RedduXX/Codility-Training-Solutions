@@ -4,7 +4,6 @@ using namespace std;
 
 int solution(int N){
     int out,counter=0;
-    //int counter=0;
     int div=1;
     string bin;
     while(div*2<=N){
@@ -24,11 +23,10 @@ int solution(int N){
     }
     for(unsigned int i=0;i<bin.length();i++){
         if(bin[i]=='1'){
-            if(out<counter){
+            if(out<=counter){
                 out=counter;
-                counter=0;
-
             }
+            counter=0;
         }
         else{
             counter+=1;
