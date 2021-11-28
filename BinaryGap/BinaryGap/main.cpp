@@ -26,6 +26,7 @@ int solution(int N){
         if(bin[i]=='1'){
             if(out<counter){
                 out=counter;
+                counter=0;
 
             }
         }
